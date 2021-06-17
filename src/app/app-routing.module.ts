@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules} from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { RestComponent} from './rest/rest.component';
 
 
 const routes: Routes = [
-{path:'', component:HomeComponent},
+{path:'', component:RestComponent},
 {path:'students', 
 loadChildren: () => 
 import("./students/students.module").then(m => m.StudentsModule)
